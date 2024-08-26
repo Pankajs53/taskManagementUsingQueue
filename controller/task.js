@@ -4,7 +4,7 @@ const { performTask
 
 const redisClient = require("../utils/redisConnect")
 
-const MAX_TASKS_PER_MINUTE = 1;
+const MAX_TASKS_PER_MINUTE = 20;
 const TIME_WINDOW_SECONDS = 60;
 const TASK_INTERVAL_SECONDS = 1; // Time interval between tasks (1 second)
 
@@ -233,9 +233,5 @@ const getAllQueueList = async () => {
     }
 };
 
-
-// now we want to create a worker to push the task from common queue to its particular queue
-// a function which takes list of queue and execute their task using worker
-// and both function will be run using cron job in one minute
 
 module.exports = { handleQueueRequest, getAllTasks,getAllQueueList };
