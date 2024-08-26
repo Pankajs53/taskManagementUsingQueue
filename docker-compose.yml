@@ -1,0 +1,25 @@
+version: '3'
+services:
+  node-api:
+    build: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    depends_on:
+      - redis
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    command: bash -c "redis-server --appendonly yes --requirepass password"
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:      
+
