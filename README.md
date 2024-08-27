@@ -14,12 +14,18 @@ This project is a task management system designed to handle and process tasks fo
 
 1. **Clone the Repository**:
    ```bash
-   [git clone https://github.com/Pankajs53/taskManagementUsingQueue.git
+   git clone https://github.com/Pankajs53/taskManagementUsingQueue.git
  
 
 2. **Build and Run the Project**:
    ```bash
    docker-compose up --build
+
+
+## Architecture: FLOW DIAGRAM
+![Architecture Diagram](https://github.com/Pankajs53/taskManagementUsingQueue/blob/main/architecture.png)
+
+   
 
 ## Kubernetes
 The Kubernetes setup includes two ReplicaSets to ensure high availability and scalability of the application.
