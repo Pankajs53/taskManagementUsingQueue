@@ -14,8 +14,8 @@ This project is a task management system designed to handle and process tasks fo
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   [git clone https://github.com/Pankajs53/taskManagementUsingQueue.git
+ 
 
 2. **Build and Run the Project**:
    ```bash
