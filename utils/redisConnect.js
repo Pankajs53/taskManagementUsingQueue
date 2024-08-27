@@ -8,7 +8,7 @@ const redisClient = new Redis({
 
     // DOCKER CONFI
     host: "redis",
-    port: 6379
+    port: 6379,
     password: "password"
 });
 
